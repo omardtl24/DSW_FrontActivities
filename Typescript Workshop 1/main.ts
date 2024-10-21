@@ -22,7 +22,7 @@ function showSeries(series:Serie[]):void{
     for(let serie of series){
         let trElement:HTMLElement = document.createElement("tr");
         trElement.innerHTML = `<td>${serie.id}</td>
-        <td><a href=>${serie.nombre}</a></td>
+        <td><a href="#" class="serie-link" data-id = ${serie.id}>${serie.nombre}</a></td>
         <td>${serie.canal}</td>
         <td>${serie.temporadas}</td>`;
         tbodySeries.appendChild(trElement);
