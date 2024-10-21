@@ -4,7 +4,7 @@ var leftZone = document.getElementById("left-zone");
 showSeries(series);
 displayMean(series);
 function displayMean(series) {
-    var meanInfo = document.createElement("h10");
+    var meanInfo = document.createElement("p");
     meanInfo.innerHTML = "Seasons average: ".concat(getSeasonsMean(series));
     leftZone.appendChild(meanInfo);
 }
@@ -17,7 +17,7 @@ function showSeries(series) {
     for (var _i = 0, series_1 = series; _i < series_1.length; _i++) {
         var serie = series_1[_i];
         var trElement = document.createElement("tr");
-        trElement.innerHTML = "<td>".concat(serie.id, "</td>\n        <td><a href=>").concat(serie.nombre, "</a></td>\n        <td>").concat(serie.canal, "</td>\n        <td>").concat(serie.temporadas, "</td>");
+        trElement.innerHTML = "<td>".concat(serie.id, "</td>\n        <td><a href=\"#\" class=\"serie-link\" data-id = ").concat(serie.id, ">").concat(serie.nombre, "</a></td>\n        <td>").concat(serie.canal, "</td>\n        <td>").concat(serie.temporadas, "</td>");
         tbodySeries.appendChild(trElement);
     }
     seriesTable.appendChild(tbodySeries);
