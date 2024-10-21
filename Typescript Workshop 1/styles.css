@@ -1,0 +1,13 @@
+.title {
+    background-color: #00bcd4;
+    padding: 10px;
+    color: black;
+    display: flex; 
+    align-items: center; 
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
