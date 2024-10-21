@@ -7,7 +7,7 @@ showSeries(series);
 displayMean(series);
 
 function displayMean(series:Serie[]): void{
-    let meanInfo = document.createElement("h10");
+    let meanInfo = document.createElement("p");
     meanInfo.innerHTML = `Seasons average: ${getSeasonsMean(series)}`
     leftZone.appendChild(meanInfo);
 }
