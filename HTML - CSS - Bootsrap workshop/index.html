@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify UI Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <form class="form-inline">
+            <input class="form-control" type="search" placeholder="¿Qué quieres reproducir?" aria-label="Search">
+        </form>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-md-3 left-sidebar scrollable">
+                <h5 class="text-white">Tu Biblioteca</h5>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <span>Tus me gusta</span>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <span>Part of me</span>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <span>Quiet time</span>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <span>Lost Without You</span>
+                </div>
+                <div class="playlist-item">
+                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <span>To Study</span>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-6 right-content scrollable">
+                <h5>Creado para ti</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Mix diario 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Mix diario 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Mix diario 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Sidebar -->
+            <div class="col-md-3 scrollable">
+                <h5>To Study</h5>
+                <img src="https://via.placeholder.com/200x300" class="img-fluid" alt="Inception">
+                <p>Time - Hans Zimmer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="d-flex justify-content-between">
+            <div>Time - Hans Zimmer</div>
+            <div>2:19 / 4:35</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
