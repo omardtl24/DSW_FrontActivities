@@ -10,9 +10,9 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark bg-dark">
         <form class="form-inline">
-            <input class="form-control" type="search" placeholder="¿Qué quieres reproducir?" aria-label="Search">
+            <input class="form-control mr-2" type="search" placeholder="¿Qué quieres reproducir?" aria-label="Search">
         </form>
     </nav>
     
@@ -20,25 +20,25 @@
         <div class="row">
             <!-- Left Sidebar -->
             <div class="col-md-3 left-sidebar scrollable">
-                <h5 class="text-white">Tu Biblioteca</h5>
+                <h5>Tu Biblioteca</h5>
                 <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <img src="https://via.placeholder.com/50/007BFF/FFFFFF?text=1" alt="Playlist">
                     <span>Tus me gusta</span>
                 </div>
                 <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50" alt="Playlist">
-                    <span>Part of me</span>
+                    <img src="https://via.placeholder.com/50/28A745/FFFFFF?text=2" alt="Playlist">
+                    <span>Part of Me</span>
                 </div>
                 <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50" alt="Playlist">
-                    <span>Quiet time</span>
+                    <img src="https://via.placeholder.com/50/DC3545/FFFFFF?text=3" alt="Playlist">
+                    <span>Quiet Time</span>
                 </div>
                 <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <img src="https://via.placeholder.com/50/FFC107/FFFFFF?text=4" alt="Playlist">
                     <span>Lost Without You</span>
                 </div>
                 <div class="playlist-item">
-                    <img src="https://via.placeholder.com/50" alt="Playlist">
+                    <img src="https://via.placeholder.com/50/17A2B8/FFFFFF?text=5" alt="Playlist">
                     <span>To Study</span>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
+                            <img class="card-img-top" src="https://via.placeholder.com/150/007BFF/FFFFFF?text=Mix+1" alt="Mix diario 1">
                             <div class="card-body">
                                 <h5 class="card-title">Mix diario 1</h5>
                             </div>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
+                            <img class="card-img-top" src="https://via.placeholder.com/150/28A745/FFFFFF?text=Mix+2" alt="Mix diario 2">
                             <div class="card-body">
                                 <h5 class="card-title">Mix diario 2</h5>
                             </div>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
+                            <img class="card-img-top" src="https://via.placeholder.com/150/DC3545/FFFFFF?text=Mix+3" alt="Mix diario 3">
                             <div class="card-body">
                                 <h5 class="card-title">Mix diario 3</h5>
                             </div>
@@ -73,9 +73,9 @@
                 </div>
             </div>
             <!-- Right Sidebar -->
-            <div class="col-md-3 scrollable">
+            <div class="col-md-3 right-sidebar scrollable">
                 <h5>To Study</h5>
-                <img src="https://via.placeholder.com/200x300" class="img-fluid" alt="Inception">
+                <img src="https://via.placeholder.com/200x300/17A2B8/FFFFFF?text=To+Study" class="img-fluid" alt="To Study">
                 <p>Time - Hans Zimmer</p>
             </div>
         </div>
@@ -83,9 +83,20 @@
 
     <!-- Music Player -->
     <div class="music-player">
-        <div class="d-flex justify-content-between">
-            <div>Time - Hans Zimmer</div>
-            <div>2:19 / 4:35</div>
+        <div class="d-flex align-items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Inception_OST.jpg/220px-Inception_OST.jpg" alt="Track Thumbnail" class="track-thumbnail">
+            <div class="track-info">
+                <div class="track-title">Time</div>
+                <div class="track-artist">Hans Zimmer</div>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button class="btn btn-control" id="prev-btn">&#9664;&#9664;</button>
+            <button class="btn btn-control" id="play-btn">&#9658;</button>
+            <button class="btn btn-control" id="next-btn">&#9654;&#9654;</button>
+        </div>
+        <div class="track-duration">
+            <span>2:19</span> / <span>4:35</span>
         </div>
     </div>
 
