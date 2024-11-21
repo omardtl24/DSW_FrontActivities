@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Jaime",
+        "edad" : 35,
+        "diagnostico" : "Sano"
+    },
+    {
+        "name":"Lucia",
+        "edad" : 23,
+        "diagnostico" : "Gripa leve"
+    },
+    {
+        "name":"Ramon",
+        "edad" : 50,
+        "diagnostico" : "Diabetes"
+    }
+]
