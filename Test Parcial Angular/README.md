@@ -2,7 +2,7 @@
 
 1. Install Angular `npm install -g @angular/cli`
 
-2. Create project `ng new --no-standalone mynewapp`
+2. Create project `ng new --no-standalone mynewapp` (Estilos CSS y renderizado SSR no)
 
 3. Install Bootstrap `npm install --save bootstrap`
 
